@@ -1,0 +1,174 @@
+# baseURL: set to whatever URL you are listening on.
+# Can be a resolvable IP/hostname for direct access.
+# Or localhost:port for connections via proxy.
+baseURL: http://localhost:1313
+
+languageCode: en-us
+title: Blog
+copyright: © 2023
+googleAnalytics:
+# paginate specifies the maximum number of posts displayed on the home page.
+paginate: 1000
+# theme specifies the name of the theme to be used.
+theme: minima
+# defaultContentLanguage specifies the default language to use.
+defaultContentLanguage: en
+# language.xxx setup
+languages:
+  en:
+    languageName: EN # will be displayed in the navbar.
+    weight: 1
+
+# author specifies your name, a slogon and your brief self-introduction.
+author:
+  name:
+  status:
+  description: |
+    Blog description
+
+params:
+  # greet specifies greeting words.
+  greet: Blog
+  # subtitle speficies a subtitle displayed right after the site title.
+  subtitle: Blog Subtitle
+  # switch specifies two emojis used as the button toggling color themes.
+  switch: ["Light Theme", "Dark Theme"]
+  # minima has one dark theme and multiple light themes. defaultTheme specifies
+  # a default light theme to use. currently available options: light, sand, rock, system.
+  defaultTheme: system
+  # displayDate speficies whether or not to display post date on the home page.
+  displayDate: true
+  # displayDescription specifies whether or not to display post description on
+  # the hoem page.
+  displayDescription: true
+  # selectable specifies if or not your post content can be selected.
+  selectable: true
+  # social is an array containing as many as social accounts to be displayed
+  # in the buttom of every page.
+  social:
+    - name: "twitter"
+      url: "https://twitter.com/"
+    - name: "email"
+      url: "hello@"
+    - name: "github"
+      url: "https://github.com/"
+    - name: "rss"
+      url: "/index.xml"
+
+  # ToC
+  toc:
+    enable: true
+
+  # math plugin
+  math:
+    enable: false
+    provider: katex
+
+  # diagram plugin
+  diagram:
+    enable: false
+    provider: mermaid
+
+  # comment plugin
+  comment:
+    enable: false
+    provider: giscus
+    # check out https://disqus.com/
+    disqus:
+      shortname: hugo-minima
+      # check out https://utteranc.es
+    utterances:
+      repo: mivinci/hugo-theme-minima
+      issueTerm: pathname
+      label: comment
+    # check out https://giscus.app
+    giscus: 
+      repo: mivinci/hugo-theme-minima
+      repoId: MDEwOlJlcG9zaXRvcnkzODcxMjM2NDU=
+      category: Comments
+      categoryId: DIC_kwDOFxMJvc4CScQm
+      mapping: pathname
+      inputPosition: buttom # bottom | top
+      reactions: true
+      metadata: false
+
+  # search plugin
+  search:
+    enable: true
+    provider: fuse
+    title: Search
+    placeholder: Enter keywords
+    # check out https://fusejs.io
+    fuse:
+      keys:
+        - title
+        - permalink
+        - summary
+        - description
+        - content
+      distance: 100
+      location: 0
+      threshold: 0.6
+      ignoreLocation: false
+      isCaseSensitive: false
+      includeScore: false
+      includeMatches: false
+      minMatchCharLength: 1
+      shouldSort: true
+      findAllMatches: false
+
+
+# menu.main is an array containing what is used as the navigator.
+menu:
+  main:
+    - identifier: /
+      name: Posts
+      weight: 1
+    - identifier: tags
+      name: Tags
+      weight: 2
+    - identifier: series
+      name: Series
+      weight: 3
+    - identifier: search
+      name: Search 🔍
+      weight: 4
+    - identifier: about
+      name: About
+      weight: 5
+
+# taxonomies defines ways to classify yout posts. Below are some presets that
+# most bloggers use, so you can replace them with whatever you like.
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+# outputs tells Hugo the kind of files to be rendered.
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# markup.highlight has two keys set to make sure that the syntax highlighting
+# in your posts are rendered correctly, so DO NOT edit them.
+markup:
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    hl_inline: false
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    noHl: false
+    style: perldoc
+    tabWidth: 4
+  tableOfContents:
+    endLevel: 3
+    ordered: true
+    startLevel: 2

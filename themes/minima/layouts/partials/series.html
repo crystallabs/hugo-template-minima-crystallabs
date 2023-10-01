@@ -1,0 +1,27 @@
+{{ if .Params.series }}
+<div>
+  <h2>Further Reading</h2>
+    <h3>This article is part of the following series:</h3>
+
+    {{ range $sernum, $series := .Params.series }}
+    {{ if not (index $.Site.Data.series $series) }}
+    {{ warnf "Series not listed in data/series.yml: %q" $series }}
+    {{ end }}
+    <h4>{{ add $sernum 1 }}. {{ or (index $.Site.Data.series $series) $series }}</h4>
+    <ul class="list-group">
+        {{ range $num,$post := (index $.Site.Taxonomies.series (index $.Params.series 0 | urlize)).Pages.ByDate }}
+          <li class="list-group-item active">
+              <a href="{{$post.RelPermalink}}">
+                Part {{ add $num 1 }}: {{ $post.Params.title}}
+              </a>
+              {{ if eq $post.RelPermalink $.Page.RelPermalink }}
+                (this article)
+              {{ end }}
+          </li>
+        {{end}}
+    </ul>
+    {{ end }}
+</div>
+{{end}}
+
+

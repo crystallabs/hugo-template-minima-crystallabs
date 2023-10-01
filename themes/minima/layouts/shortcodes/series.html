@@ -1,0 +1,8 @@
+{{ $items := $.Site.Data.series.meta }}
+{{ if $items }}
+<ul>
+{{ range $item, $desc := $items }}
+<li><a href="/tags/{{$item}}">#{{$item}}</a> - {{$desc}}</li>
+{{ end }}
+</ul>
+{{ end }}

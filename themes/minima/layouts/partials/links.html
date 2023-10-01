@@ -1,0 +1,19 @@
+{{ $links := .Store.Get "links" }}
+{{ if $links }}
+<div>
+  <h2>Automatic Links</h2>
+    The following links appear in the article:
+
+		<p>
+		{{ $.Store.Set "li" 0 }}
+		{{ range $url, $title := $links }}
+		{{ $.Store.Add "li" 1 }}
+		{{ if (ne $title $url) }}
+		{{ $.Store.Get "li"}}. {{$title | title}} - <a href="{{$url}}">{{$url}}</a><br>
+		{{ else }}
+		{{ $.Store.Get "li"}}. <a href="{{$url}}">{{$url}}</a><br>
+		{{ end }}
+		{{ end }}
+		</p>
+</div>
+{{end}}

@@ -1,0 +1,1 @@
+{{ $url := .Get 0 }}{{ $title := or (.Get 1) $url }}<a href="{{ $url }}">{{ $title }}</a>

@@ -1,0 +1,18 @@
+<div>
+  <div class="flex flex-col-reverse sm:flex-row sm:justify-between">
+    {{ if .Page.Params.link }}
+    <a class="text-lg font-bold" href="{{ .Page.Params.link }}">{{ .Title }}</a>
+    {{ else }}
+    <a class="text-lg font-bold" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ end }}
+    {{ if .Site.Params.displayDate }}
+    <div class="text-sm font-bold whitespace-nowrap">{{ .Lastmod | time.Format (T "timeformat") }}</div>
+    {{ end }}
+  </div>
+  {{ if .Site.Params.displayDescription }}
+  <p class="text-base mb-2">
+    {{ if .Draft }}<span class="ml-3 tag hl">DRAFT</span>{{ end }}
+    {{ .Description | markdownify | safeHTML }}
+  </p>
+  {{ end }}
+</div>
