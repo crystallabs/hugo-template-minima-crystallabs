@@ -120,8 +120,8 @@ To serve the completely static website via Nginx, you could use a basic config s
 
 ```nginx
 server {
-	listen 8080 default_server;
-	listen [::]:8080 default_server;
+	listen 1313 default_server;
+	listen [::]:1313 default_server;
 
 	server_name _;
 
