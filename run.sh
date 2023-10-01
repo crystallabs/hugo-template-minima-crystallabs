@@ -1,7 +1,6 @@
 #!/bin/sh
 
-#~/go/bin/hugo server -b https://crystallabs.io/ --cleanDestinationDir --config hugo.yaml -c content -d public --forceSyncStatic --gc -w --appendPort=false --disableBrowserError --ignoreCache --disableFastRender --disableLiveReload --renderStaticToDisk --renderToDisk -v $*
-~/go/bin/hugo server --cleanDestinationDir --config hugo.yaml -c content -d public --forceSyncStatic --gc -w --appendPort=false --disableBrowserError --ignoreCache --disableFastRender --disableLiveReload --renderStaticToDisk --renderToDisk -v $*
+~/go/bin/hugo server -b https://localhost/ --cleanDestinationDir --config hugo.yaml -c content -d public --forceSyncStatic --gc -w --appendPort=false --disableBrowserError --ignoreCache --disableFastRender --disableLiveReload --renderStaticToDisk --renderToDisk -v $*
 
 #  -l, --layoutDir string           filesystem path to layout directory
 #      --logLevel string            log level (debug|info|warn|error)
