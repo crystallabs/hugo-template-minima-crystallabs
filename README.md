@@ -1,6 +1,6 @@
 ## Introduction
 
-This article explains how to set up a blog using {{< L "https://gohugo.io" Hugo >}} and the same theme, format, and features as seen on https://crystallabs.io/.
+This article explains how to set up a blog using {{< L "https://gohugo.io/" Hugo >}} and the same theme, format, and features as seen on https://crystallabs.io/.
 
 The article is also used as the theme's Git repository `README.md`, in which the shortcodes will display as text when viewed through Git. That minimal visual artifact is fine.
 
