@@ -27,8 +27,8 @@ Static site generator of choice is {{< L "https://gohugo.io/" Hugo >}}.
 
 It is not the best static site generator, but it is cleaner than the venerable {{< L "https://en.wikipedia.org/wiki/Website_Meta_Language" WML >}} and much more reasonable than Gatsby.
 
-Hugo has the ability to serve pages directly from its built-in web server. But the setup shown here creates a completely static site which is served by nginx
-or Apache. Letting Hugo serve it is trivial -- just omit the options which disable Hugo itself.
+Hugo has the ability to serve pages directly from its built-in web server, or you can generate static pages and serve them with an external web server.
+Both options are shown.
 
 ## Theme
 
