@@ -6,6 +6,7 @@ draft: false
 toc: true
 
 description: "Site purpose. Content organization."
+#banner: image.png
 #series: [""]
 #tags: [""]
 #math: false
@@ -20,7 +21,7 @@ About site.
 
 ### Content
 
-Site content is organized into articles. There is a main menu at the top, accessible from every page, allowing navigation and searching.
+Site content is organized into posts. There is a main menu at the top, accessible from every page, allowing navigation and searching.
 
 Menu "{{< l "/" Articles >}}" displays all articles in a single page. This is the current homepage of the site.
 
@@ -38,7 +39,7 @@ Content is grouped by tags and series.
 
 Tags are used to index articles by subjects they describe in more detail than just as a passing reference.
 
-Apart from _specific_ tags named after the subject they describe (e.g. "git"), the following ones have been defined in `data/tags.yaml`:
+Apart from _specific_ tags named after the subject they describe (e.g. "git"), the following generic (_meta_) tags have been defined in `data/tags.yaml`:
 
 {{< tags >}}
 
@@ -51,6 +52,6 @@ They provide organized guidance to becoming a qualified user in the subject matt
 
 The following series have been defined in `data/series.yaml`:
 
-{{< tags >}}
+{{< series >}}
 
 The complete list of available series can be seen on page [/series](/series).
