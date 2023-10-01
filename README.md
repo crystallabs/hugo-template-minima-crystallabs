@@ -1,21 +1,3 @@
----
-title: "Creating a Blog Like EXAMPLE.COM"
-slug: creating-a-blog
-date: 2023-07-30
-lastmod: 2023-09-30
-draft: false
-toc: true
-
-description: "Your own blog like EXAMPLE.COM. Code and procedures documented. Instant success."
-#banner: image.png
-#series: []
-tags: ["crystallabs"]
-#math: false
-#diagram: false
-#comment: false
-#link: 
----
-
 ## Introduction
 
 This article explains how to set up a blog using the same theme, format, and features as seen on https://EXAMPLE.COM/.
