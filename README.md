@@ -1,6 +1,6 @@
 ## Introduction
 
-This article explains how to set up a blog using the same theme, format, and features as seen on https://EXAMPLE.COM/.
+This article explains how to set up a blog using the same theme, format, and features as seen on https://crystallabs.io/.
 
 ## Quick Start
 
