@@ -114,6 +114,8 @@ The improvements to the "minima" theme done so far are:
 
 - Improve link colors when using dark theme
 
+- Improve content of `/tags` and `/series` pages, to include descriptions like `tags` and `series` shortcodes do
+
 - Visually better integration of the banner feature?
 
 ## Theme Customization
