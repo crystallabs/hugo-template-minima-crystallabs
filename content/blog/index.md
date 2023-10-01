@@ -1,7 +1,7 @@
 ---
 title: "Creating a Blog Like CrystalLabs.io"
 slug: creating-a-blog
-date: 2023-07-30
+date: 2023-10-01
 lastmod: 2023-10-01
 draft: false
 toc: true
