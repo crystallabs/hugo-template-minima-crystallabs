@@ -7,8 +7,8 @@ toc: true
 
 description: "Site purpose. Content organization."
 #banner: image.png
-#series: [""]
-#tags: [""]
+series: ["site"]
+tags: ["site"]
 #math: false
 #diagram: false
 #comment: false

@@ -9,7 +9,7 @@ toc: true
 description: "Your own blog like crystallabs.io. Code and procedures documented. Instant success."
 #banner: image.png
 #series: []
-tags: ["crystallabs"]
+tags: ["site"]
 #math: false
 #diagram: false
 #comment: false

@@ -1,6 +1,6 @@
 ---
 meta:
   # Only meta tags will display with {{< tags >}}. This is by design.
-  writing: "Blog posts about content writing"
+  site: "Tags re. This Site"
 specific:
   hugo: "Hugo"
