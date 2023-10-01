@@ -32,7 +32,7 @@ Both options are shown.
 
 ## Theme
 
-After seeing {{< L "https://decuser.github.io/" "Will (decuser) Senn's Blog" >}}, I knew that I finally found a blog theme that was more promising than various themes I found in the previous couple years.
+After seeing {{< L "https://decuser.github.io/" "Will (decuser) Senn's Blog" >}}, I found a blog theme more promising than various themes I found in the previous couple years.
 
 That site is implemented in {{< L "https://jekyllrb.com/" "Jekyll" >}}, but searching for the theme named "minima" I was able to find a similar template for Hugo.
 
