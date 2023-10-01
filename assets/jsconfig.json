@@ -3,7 +3,7 @@
   "baseUrl": ".",
   "paths": {
    "*": [
-    "../themes/minima/assets/*"
+    "../themes/minima-crystallabs/assets/*"
    ]
   }
  }

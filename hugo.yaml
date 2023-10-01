@@ -10,7 +10,7 @@ googleAnalytics:
 # paginate specifies the maximum number of posts displayed on the home page.
 paginate: 1000
 # theme specifies the name of the theme to be used.
-theme: minima
+theme: minima-crystallabs
 # defaultContentLanguage specifies the default language to use.
 defaultContentLanguage: en
 # language.xxx setup
