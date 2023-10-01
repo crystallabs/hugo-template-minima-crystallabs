@@ -1,12 +1,12 @@
 ## Introduction
 
-This article explains how to set up a blog using the same theme, format, and features as seen on https://crystallabs.io/.
+This article explains how to set up a blog using {{< L "https://gohugo.io" Hugo >}} and the same theme, format, and features as seen on https://crystallabs.io/.
 
-It is also used as the Git repository's `README.md`, in which the shortcodes will display as text. That minimal visual artifact is fine.
+The article is also used as the theme's Git repository `README.md`, in which the shortcodes will display as text when viewed through Git. That minimal visual artifact is fine.
 
 ## Quick Start
 
-Not to waste time, you can clone the theme and have the site running in no time:
+Not to waste time, you can clone the whole template website and have the site running in no time:
 
 ```sh
 
@@ -20,6 +20,8 @@ cd mysite
 # Or to run the standard Hugo server, as usual:
 hugo serve
 ```
+
+If you only want the theme and not the whole template website, just copy (or make a symlink to) the files in `themes/minima-crystallabs/` in this repository.
 
 ## Static Site Generator
 
