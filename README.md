@@ -94,6 +94,8 @@ The improvements to the "minima" theme done so far are:
 
 - Devise a better way for code blocks to show difference between lines of input and output. (The current model where lines to highlight are manually specified with e.g. `sh {hl_lines="1-2"}` is impractical)
 
+- Improve link colors when using dark theme
+
 - Visually better integration of the banner feature?
 
 ## Theme Customization
