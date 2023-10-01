@@ -2,6 +2,8 @@
 
 This article explains how to set up a blog using the same theme, format, and features as seen on https://crystallabs.io/.
 
+It is also used as the Git repository's `README.md`, in which the shortcodes will display as text. That minimal visual artifact is fine.
+
 ## Quick Start
 
 Not to waste time, you can clone the theme and have the site running in no time:
