@@ -12,7 +12,13 @@ Not to waste time, you can clone the theme and have the site running in no time:
 
 git clone https://github.com/crystallabs/hugo-template-minima-crystallabs mysite
 cd mysite
+
+# For generating static pages, to be served by a web server:
+# (Hugo server still runs permanently, to watch for changes to files)
 ./run.sh
+
+# Or to run the standard Hugo server, as usual:
+hugo serve
 ```
 
 ## Static Site Generator
@@ -82,8 +88,26 @@ The improvements to the "minima" theme done so far are:
 
 - Promotion for Hugo was removed
 
-## TODO
+### TODO
 
 - Devise a better way for code blocks to show difference between lines of input and output. (The current model where lines to highlight are manually specified with e.g. `sh {hl_lines="1-2"}` is impractical)
 
 - Visually better integration of the banner feature?
+
+## Serving the Website
+
+As mentioned in Quick Start, you can serve the site by running:
+
+```sh
+# For generating static pages, to be served by a web server:
+# (Hugo server still runs permanently, to watch for changes to files)
+./run.sh
+```
+
+Or you can run the usual Hugo server as it comes by default:
+
+```sh
+hugo serve
+```
+
+
