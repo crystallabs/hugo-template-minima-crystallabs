@@ -1,7 +1,7 @@
 # baseURL: set to whatever URL you are listening on.
 # Can be a resolvable IP/hostname for direct access.
 # Or localhost:port for connections via proxy.
-baseURL: http://localhost:1313
+baseURL: http://localhost:8080
 
 languageCode: en-us
 title: Blog

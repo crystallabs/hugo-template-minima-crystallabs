@@ -88,11 +88,15 @@ The improvements to the "minima" theme done so far are:
 
 - Promotion for Hugo was removed
 
-### TODO
+### Theme To-Do
 
 - Devise a better way for code blocks to show difference between lines of input and output. (The current model where lines to highlight are manually specified with e.g. `sh {hl_lines="1-2"}` is impractical)
 
 - Visually better integration of the banner feature?
+
+## Theme Customization
+
+You can create the `layouts/` directory at the same level with `hugo.yaml` and put your customizations there.
 
 ## Serving the Website
 
@@ -110,4 +114,30 @@ Or you can run the usual Hugo server as it comes by default:
 hugo serve
 ```
 
+### Nginx config
 
+To serve the completely static website via Nginx, you could use a basic config such as:
+
+```nginx
+server {
+	listen 8080 default_server;
+	listen [::]:8080 default_server;
+
+	server_name _;
+
+	root /var/www/html;
+
+	index index.html index.htm index.nginx-debian.html;
+
+	location / {
+		try_files $uri $uri/index.html =404;
+	}
+
+	location ~ /\.ht {
+		deny all;
+	}
+}
+
+```
+
+(The example does not show SSL setup because it is behind a proxy.)
