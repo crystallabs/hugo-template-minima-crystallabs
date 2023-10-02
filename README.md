@@ -38,7 +38,7 @@ After seeing {{< L "https://decuser.github.io/" "Will (decuser) Senn's Blog" >}}
 
 That site is implemented in {{< L "https://jekyllrb.com/" "Jekyll" >}}, but searching for the theme named "minima" I was able to find a similar template for Hugo.
 
-I did many changes and improvements to it.
+The theme was updated significantly and changed to name `minima-crystallabs`.
 
 ### Theme Improvements
 
