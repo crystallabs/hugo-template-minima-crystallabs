@@ -143,7 +143,6 @@ server {
 		deny all;
 	}
 }
-
 ```
 
 (The example does not show SSL setup because it is behind a proxy.)
