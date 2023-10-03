@@ -122,7 +122,7 @@ hugo serve
 
 ### Nginx config
 
-To serve the completely static website via Nginx, you could use a basic config such as:
+To serve a completely static website via Nginx, you could use a basic config such as:
 
 ```nginx
 server {
